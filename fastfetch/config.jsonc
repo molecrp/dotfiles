@@ -1,0 +1,88 @@
+{
+  "logo": {
+    "type": "builtin",
+    "color": {
+      "1": "yellow",
+      "2": "yellow",
+      "3": "yellow",
+      "4": "yellow"
+    },
+    "source": "aperture"
+  },
+  "display": { "color": "yellow" },
+  "modules": [
+    {
+      "type": "custom",
+      "key": " ",
+      "format": "APERTURE SCIENCE SECURITY ASSESSMENT CENTER | NODE-749"
+    },
+    {
+      "type": "custom",
+      "key": " ",
+      "format": "AISP LOCAL TESTING INITIATIVE (12.01.2024)"
+    },
+    {
+      "type": "custom",
+      "key": " ",
+      "format": "------------------------------------------------------"
+    },
+    "CPU",
+    "Disk",
+    "Memory",
+    "Break",
+    {
+      "type": "custom",
+      "key": "Bootloader",
+      "format": "GRUB"
+    },
+    {
+      "type": "custom",
+      "key": "Init",
+      "format": "OpenRC"
+    },
+    "Kernel",
+    "WM",
+    {
+      "type": "custom",
+      "key": "Terminal",
+      "format": "tmux (kitty)"
+    },
+    "Shell",
+    {
+      "type": "command",
+      "key": "Editor",
+      "shell": "/bin/zsh",
+      "text": "versions.sh nvim"
+    },
+    {
+      "type": "command",
+      "key": "Packages",
+      "shell": "/bin/zsh",
+      "text": "{equery l @cworld | wc -l | grep --extended-regexp --only-matching \"[0-9]+\"; echo \"(emerge) `ls -l /home/spil/home/.nuget/packages/ | wc -l` (NuGet)\"; } | tr \"\\n\" \" \""
+    },
+    "Break",
+    {
+      "type": "command",
+      "key": "Web-Client",
+      "shell": "/bin/zsh",
+      "text": "versions.sh firefox"
+    },
+    {
+      "type": "command",
+      "key": "Virtualization",
+      "shell": "/bin/zsh",
+      "text": "versions.sh qemu"
+    },
+    {
+      "type": "command",
+      "key": "Containerization",
+      "shell": "/bin/zsh",
+      "text": "versions.sh containerd"
+    },
+    // {
+    //   "type": "custom",
+    //   "key": "Palette",
+    //   "format": "Gruvbox-Material"
+    // }
+  ]
+}
