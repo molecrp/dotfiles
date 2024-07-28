@@ -1,0 +1,11 @@
+Bootloader: GRUB
+Init: OpenRC
+Kernel: Linux vvvvvv-gentoo-dist
+WM: i3 (X11)
+Terminal: tmux (kitty)
+Shell: zsh
+Editor: Neovim
+
+Web-Client: Mozilla Firefox 128.0
+Virtualization: QEMU v9.0.1
+Containerization: containerd v1.7.15
