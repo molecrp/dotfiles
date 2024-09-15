@@ -6,6 +6,6 @@ Terminal: tmux (kitty)
 Shell: zsh
 Editor: Neovim
 
-Web-Client: Mozilla Firefox 128.0
-Virtualization: QEMU v9.0.1
-Containerization: containerd v1.7.15
+Web-Client: Mozilla Firefox
+Virtualization: QEMU
+Containerization: containerd
